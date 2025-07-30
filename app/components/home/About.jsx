@@ -13,7 +13,7 @@ const About = () => (
         </span>
       </div>
       <div className="">
-        <div className="text-white text-6xl md:text-7xl">15+</div>
+        <div className="text-white text-6xl md:text-7xl font-sans font-semibold">15+</div>
         <div className="text-gray-400 max-w-xs mt-2 text-base">
           Professional Teams to empower ideas through high-impact design and
           growth-focused strategy.
@@ -34,10 +34,10 @@ const About = () => (
           <AnimatedButton
             href="/contact"
             label="CONTACT"
-            textColor="#818588"
-            hoverTextColor="#818588"
-            iconColor="#818588"
-            hoverIconColor="#818588"
+            textColor="#697282"
+            hoverTextColor="#697282"
+            iconColor="#697282"
+            hoverIconColor="#697282"
             circleColor="#AEFE00"
             IconComponent={FaArrowRightLong}
           />

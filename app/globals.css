@@ -105,3 +105,22 @@ input[type="number"] {
 
 
 /* button */
+@keyframes handHitLeft {
+  0% { transform: translateX(-100%) translateY(-50%) rotate(-20deg); opacity: 0; }
+  50% { transform: translateX(0) translateY(-50%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(-100%) translateY(-50%) rotate(-20deg); opacity: 0; }
+}
+
+@keyframes handHitRight {
+  0% { transform: translateX(100%) translateY(-50%) rotate(20deg); opacity: 0; }
+  50% { transform: translateX(0) translateY(-50%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(100%) translateY(-50%) rotate(20deg); opacity: 0; }
+}
+
+.animate-hand-left {
+  animation: handHitLeft 0.6s ease-in-out;
+}
+
+.animate-hand-right {
+  animation: handHitRight 0.6s ease-in-out;
+}

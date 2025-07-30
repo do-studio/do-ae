@@ -19,12 +19,12 @@ const ClientsMarquee = [
 const Clients = () => {
   return (
     <div>
-      <Marquee gradient gradientColor="#000">
+      <Marquee gradient gradientColor="#000" gradientWidth={100}>
         {ClientsMarquee.map((client, index) => (
           <Image
             key={index}
             src={client.logoimage}
-            className="object-cover "
+            className="object-cover w-32 md:w-52"
             alt={`Client logo ${index + 1}`}
             
           />

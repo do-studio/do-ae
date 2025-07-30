@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { About, Banner,Clients,Ourworks } from "./components";
+import { About, Banner,Clients,Ourworks,Services,Faq,GetinTouch,Testimonials } from "./components";
 
 export default function Home() {
   return (
@@ -8,6 +8,10 @@ export default function Home() {
     <Clients/>
     <About/>
     <Ourworks/>
+    <Services/>
+    <Faq/>
+    <Testimonials/>
+    <GetinTouch/>
     </>
   );
 }

@@ -2,13 +2,13 @@ import React from "react";
 
 const Ourworks = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center py-10 xl:py-20 justify-center">
       <div className="w-11/12 mx-auto grid gap-2 xl:gap-5 grid-cols-1 md:grid-cols-2">
         {/* Left large card */}
         <div className="bg-gray-200 rounded-3xl p-8  flex flex-col relative aspect-square justify-center">
-          <div className="absolute bg-black px-3 py-2 rounded-full left-5 top-5 flex items-center gap-3">
+          <div className="absolute bg-black px-3 py-2 rounded-full left-3 top-3 md:left-5 md:top-5 flex items-center gap-3">
             <span className="block h-3 w-3 rounded-full primary-bg"></span>
-            <span className="primary font-medium text-sm tracking-widest">
+            <span className="text-white font-medium text-sm tracking-widest">
               OUR WORKS
             </span>
           </div>
@@ -17,7 +17,7 @@ const Ourworks = () => {
         {/* Right cards */}
         <div className="grid grid-cols-2 gap-2 xl:gap-5 ">
           {/* Web design */}
-          <div className="aspect-square bg-neutral-800 rounded-3xl p-6 text-white flex flex-col">
+          <div className="aspect-square bg-neutral-800 rounded-3xl p-3 md:p-6 text-white flex flex-col">
             <span className="text-xs xl:text-2xl mb-2 font-light">
               Web design
             </span>
@@ -27,7 +27,7 @@ const Ourworks = () => {
             </span>
           </div>
           {/* Branding */}
-          <div className="aspect-square bg-neutral-800 rounded-3xl p-6 text-white flex flex-col">
+          <div className="aspect-square bg-neutral-800 rounded-3xl p-3 md:p-6 text-white flex flex-col">
             <span className="text-xs xl:text-2xl mb-2 font-light">
               Branding
             </span>
@@ -37,7 +37,7 @@ const Ourworks = () => {
             </span>
           </div>
           {/* UI/UX */}
-          <div className="aspect-square bg-neutral-800 rounded-3xl p-6 text-white flex flex-col">
+          <div className="aspect-square bg-neutral-800 rounded-3xl p-3 md:p-6 text-white flex flex-col">
             <span className="text-xs xl:text-2xl mb-2 font-light">
               UI/UX Design
             </span>
@@ -47,7 +47,7 @@ const Ourworks = () => {
             </span>
           </div>
           {/* Creative Direction */}
-          <div className="aspect-square bg-neutral-800 rounded-3xl p-6 text-white flex flex-col">
+          <div className="aspect-square bg-neutral-800 rounded-3xl p-3 md:p-6 text-white flex flex-col">
             <span className="text-xs xl:text-2xl mb-2 font-light">
               Creative Direction
             </span>

@@ -17,7 +17,7 @@ const menus = [
   { label: "Services", href: "/services" },
   {
     label: "Our Works",
-    href: "/our-works",
+    href: "#",
     submenu: [
       { label: "branding", href: "#" },
       { label: "creative", href: "#" },
@@ -85,8 +85,8 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full flex justify-center px-2 py-6 fixed top-0 z-50 gap-3 bg-transparent">
-      <div className="w-full max-w-11/12 rounded-full bg-white shadow flex items-center px-6 py-3">
+    <div className="w-full flex justify-center px-2 py-4 fixed top-0 z-50 gap-3 bg-transparent">
+      <div className="w-full max-w-11/12 rounded-full bg-white shadow flex items-center px-3 md:px-6 py-1 md:py-2">
         {/* Left */}
         <div className="flex-1 md:text-lg font-medium text-black uppercase">
           <Link href="/" className="font-medium transition">
@@ -230,7 +230,7 @@ const Header = () => {
                       return (
                         <motion.div
                           key={idx}
-                          className="uppercase font-semibold text-3xl flex flex-col gap-1"
+                          className="capitalize font-semibold text-3xl flex flex-col gap-1"
                           variants={menuItemVariants}
                           initial="hidden"
                           animate="visible"
@@ -243,7 +243,7 @@ const Header = () => {
                               aria-haspopup="true"
                               aria-expanded={submenuOpenIdx === idx}
                             >
-                              <span className="uppercase">{menu.label}</span>
+                              <span className="capitalize">{menu.label}</span>
                               <AiOutlinePlus className="w-5 h-5 ml-2" />
                             </button>
                           ) : (
@@ -293,7 +293,7 @@ const Header = () => {
                         <Link
                           href={sub.href}
                           onClick={() => setModalOpen(false)}
-                          className="text-white uppercase font-semibold text-3xl transition"
+                          className="text-white capitalize font-semibold text-3xl transition"
                         >
                           {sub.label}
                         </Link>
