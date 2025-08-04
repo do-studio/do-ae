@@ -22,12 +22,13 @@ const About = () => (
     </div>
     <div className="md:col-span-2">
       <div className="flex flex-col gap-5">
+        {/* description */}
         <div className="text-white text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
           Create is a creative digital agency built for bold thinkers,
           disruptive startups, and modern brands. <span className="text-gray-500"> With a team of visionaries, designers, and tech savvy storytellers ,
           we don’t just deliver — we elevate.</span>
         </div>
-      
+       {/* description */}
 
         {/* Button */}
         <div className="mt-3 relative">

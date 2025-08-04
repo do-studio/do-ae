@@ -42,8 +42,8 @@ const GetinTouch = () => {
       </div>
     </div>
     {/*  */}
-    <div className="bg-[#0C0D14]">
-        <Marquee gradient gradientColor="#0C0D14" className="py-10">
+    <div className="bg-[#140c0d] relative overflow-hidden">
+        <Marquee gradient gradientColor="#0C0D14" className="py-10 overflow-hidden">
             <a href="#" className="text-4xl xl:text-9xl font-medium text-gray-600 hover:text-gray-400">info@dostudio.co.in</a>
         </Marquee>
     </div>

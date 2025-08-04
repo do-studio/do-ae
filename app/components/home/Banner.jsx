@@ -1,3 +1,4 @@
+'use client'
 import { BsArrowUpRight } from "react-icons/bs";
 import { TfiMouse } from "react-icons/tfi";
 
@@ -5,6 +6,7 @@ const Banner = () => {
   return (
     <div className="px-20 relative bg-black min-h-screen flex flex-col items-center justify-center py-20 ">
       {/* Main Title and Floating Badges */}
+      
       <h1 className="text-6xl md:text-[9vw] font-medium primary relative leading-none flex flex-col md:flex-row items-center">
         <span className="relative">
           Marketing
@@ -13,10 +15,12 @@ const Banner = () => {
             SEO
           </span>
           {/* Full-Stack Badge with Icon */}
+
           <span className="absolute -bottom-24 md:-bottom-7 xl:-bottom-5 left-0 md:left-10 bg-blue-600 px-3 py-1.5 rounded-full text-white text-[8px] md:text-xs font-semibold flex items-center">
             Digital Marketing
             <BsArrowUpRight className="ml-1 text-white text-xs" />
           </span>
+    
         </span>
         <span className="text-white pl-2">Agency</span>
         <span className="hidden md:block primary mt-5 -ml-3 text-8xl font-bold">.</span>
