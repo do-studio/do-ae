@@ -60,7 +60,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <SmoothScrollProvider>
+       {/* <SmoothScrollProvider> */}
       <body
         className={`${poppins.className} antialiased min-h-screen flex flex-col justify-between`}
         cz-shortcut-listen="true"
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
-      </SmoothScrollProvider>
+      {/* </SmoothScrollProvider> */}
     </html>
   );
 }
