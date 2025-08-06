@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import { DoLogo } from "@/public";
+import Image from "next/image";
 
 const socialsLink = [
   {
@@ -19,15 +21,21 @@ const socialsLink = [
 ];
 
 const Footer = () => {
-   const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-white text-black w-full h-full relative overflow-hidden">
-      <p className="-z-0 uppercase font-extrabold text-zinc-100 text-[200px] xl:text-[270px] hidden md:block absolute left-[50%] -bottom-24  -translate-x-[50%] xl:-translate-x-[50%]">dostudio</p>
+      <p className="-z-0 uppercase font-extrabold text-zinc-100 text-[200px] xl:text-[270px] hidden md:block absolute left-[50%] -bottom-24  -translate-x-[50%] xl:-translate-x-[50%]">
+        dostudio
+      </p>
       <div className="w-11/12 mx-auto relative">
         <div className="py-10 flex flex-col md:flex-row justify-between gap-10">
           <div className="w-[100%] xl:w-[30%] flex flex-col gap-4">
-            <Link href="/" className="text-2xl font-medium transition">
-              Do Studio
+            <Link href="/" className="w-fit">
+              <Image
+                className="w-28 xl:w-40 object-contain"
+                src={DoLogo}
+                alt=""
+              />
             </Link>
             <p className="text-xs text-gray-500">
               Let’s collaborate on something bold, strategic, and unforgettable.

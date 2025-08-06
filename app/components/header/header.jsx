@@ -10,6 +10,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowLeft } from "react-icons/bs";
 import { IoIosClose } from "react-icons/io";
 import { AiOutlinePlus } from "react-icons/ai";
+import {DoLogo} from '../../../public'
+import Image from "next/image";
 
 
 const menus = [
@@ -87,11 +89,11 @@ const Header = () => {
 
   return (
     <div className="w-full flex justify-center px-2 py-4 fixed top-0 z-50 gap-3 bg-transparent">
-      <div className="w-full max-w-11/12 rounded-full bg-white shadow flex items-center px-3 md:px-6 py-1 md:py-2">
+      <div className="w-full max-w-11/12 rounded-full bg-white shadow flex items-center px-3 md:px-6 py-2 md:py-2">
         {/* Left */}
         <div className="flex-1 md:text-lg font-medium text-black uppercase">
-          <Link href="/" className="font-medium transition">
-            Do Studio
+          <Link href="/">
+           <Image className="w-28 xl:w-40 object-contain" src={DoLogo} alt=""/>
           </Link>
         </div>
 
