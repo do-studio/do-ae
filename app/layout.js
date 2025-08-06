@@ -9,19 +9,19 @@ const poppins = Poppins({
   display: "swap",
 });
 
+// Metadata config
 export const metadata = {
+  metadataBase: new URL("https://dostudio.ae"),
   title: "Digital Marketing Agency in United Arab Emirates",
-  description:
-    "Digital Marketing and Branding agency in Calicut United Arab Emirates",
+  description: "Digital Marketing and Branding agency in Calicut United Arab Emirates",
   openGraph: {
     title: "Digital Marketing Agency in United Arab Emirates",
-    description:
-      "Digital Marketing and Branding agency in Calicut United Arab Emirates",
+    description: "Digital Marketing and Branding agency in Calicut United Arab Emirates",
     url: "https://dostudio.ae",
     siteName: "Do Studio",
     images: [
       {
-        url: "https://res.cloudinary.com/djswkzoth/image/upload/v1737185612/metaicon_t4u5lc.png", // Ensure this image exists in your `public` folder
+        url: "https://res.cloudinary.com/djswkzoth/image/upload/v1737185612/metaicon_t4u5lc.png",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Agency in UAE",
@@ -30,7 +30,6 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-
   icons: {
     icon: [
       {
