@@ -4,6 +4,8 @@ import React from "react";
 import { Grade } from "../../../public";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Marquee from "react-fast-marquee";
+import Tilt from "react-parallax-tilt";
+
 const GetinTouch = () => {
   return (
     <>
@@ -26,10 +28,12 @@ const GetinTouch = () => {
       {/* Centered content */}
       <div className="relative z-10 flex flex-col items-center">
         <h2 className="text-3xl xl:text-5xl font-bold capitalize text-white mb-4 text-center leading-tight">
-          Ready to kick off
-          <br />a project?
+          Ready to Grow Your
+          <br />Business?
         </h2>
-
+        <p className="text-xs md:text-base xl:w-[60%] text-center">Whether you're a startup, SME, or enterprise, we customize strategies that align with
+your goals and budget. Let’s create a digital roadmap that drives real results.</p>
+        
         <div className="group flex items-center mt-5 xl:mt-10 primary-bg hover:bg-black hover:text-[#AEFE00] text-sm px-10 py-4 rounded-full cursor-pointer relative">
           <Link href={"/"} className="z-10">
             Get in Touch
@@ -39,6 +43,7 @@ const GetinTouch = () => {
             <HiArrowLongRight />
           </span>
         </div>
+
       </div>
     </div>
     {/*  */}

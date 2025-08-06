@@ -8,39 +8,27 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Allservices = [
   {
     id: 1,
-    title: "branding",
+    title: "Search Engine Optimization (SEO)",
     image: `https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg`,
-    desc: `CreatiFlow designed a smooth and intuitive grocery shopping experience for
-          Groceria — including real-time cart syncing, smart search, and one-tap reorder.
-          The clean UI and frictionless checkout flow led to significant user growth and
-          increased daily sessions.`,
+    desc: `Be found where it matters on the first page of Google.`,
   },
   {
     id: 2,
-    title: "digital marketing",
+    title: "Social Media Marketing",
     image: `https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg`,
-    desc: `CreatiFlow designed a smooth and intuitive grocery shopping experience for
-          Groceria — including real-time cart syncing, smart search, and one-tap reorder.
-          The clean UI and frictionless checkout flow led to significant user growth and
-          increased daily sessions.`,
+    desc: `Connect, engage, and grow your audience with scroll-stopping content.`,
   },
   {
     id: 3,
-    title: "website development",
+    title: "Web Design & Development",
     image: `https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg`,
-    desc: `CreatiFlow designed a smooth and intuitive grocery shopping experience for
-          Groceria — including real-time cart syncing, smart search, and one-tap reorder.
-          The clean UI and frictionless checkout flow led to significant user growth and
-          increased daily sessions.`,
+    desc: `Build a stunning website that converts, not just looks good.`,
   },
   {
     id: 4,
-    title: "production",
+    title: "Branding",
     image: `https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg`,
-    desc: `CreatiFlow designed a smooth and intuitive grocery shopping experience for
-          Groceria — including real-time cart syncing, smart search, and one-tap reorder.
-          The clean UI and frictionless checkout flow led to significant user growth and
-          increased daily sessions.`,
+    desc: `Build a memorable brand that customers recognize and trust.`,
   },
 ];
 
@@ -52,12 +40,12 @@ const Service = () => {
       <div className="w-11/12 mx-auto">
         <div className="flex items-center gap-3 mb-5">
           <span className="block h-3 w-3 rounded-full primary-bg"></span>
-          <span className="text-black font-medium text-sm tracking-widest">
-            SERVICES
+          <span className="text-black uppercase font-medium text-sm tracking-widest">
+            Our Core Services
           </span>
         </div>
-        <p className="text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
-          Everything you need to stand out, scale up, and succeed
+        <p className="text-2xl sm:text-4xl xl:w-[80%] font-medium leading-tight">
+          At Do Studio, we provide data-driven digital marketing services designed to grow your brand online.
         </p>
 
         <div className="mt-5">
