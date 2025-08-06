@@ -1,7 +1,29 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-    domains: ['images.pexels.com'],
+  async redirects() {
+    return [
+      {
+        source: "/:path*", // Match all paths
+        has: [
+          {
+            type: "host",
+            value: "www.dostudio.ae", // Match www domain
+          },
+        ],
+        destination: "https://dostudio.ae/:path*", // Redirect to non-www domain
+        permanent: true, // 308 permanent redirect
+      },
+    ];
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+        port: "",     // Leaving blank means any port
+        pathname: "/**", // Match all paths on the host
+      },
+    ],
   },
 };
 
