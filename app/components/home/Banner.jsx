@@ -15,7 +15,7 @@ const Banner = () => {
             SEO
           </span>
           {/* Full-Stack Badge with Icon */}
-
+          
           <span className="absolute -bottom-24 md:-bottom-7 xl:-bottom-5 left-0 md:left-10 bg-blue-600 px-3 py-1.5 rounded-full text-white text-[8px] md:text-xs font-semibold flex items-center">
             Digital Marketing
             <BsArrowUpRight className="ml-1 text-white text-xs" />

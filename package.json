@@ -21,10 +21,12 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^5.5.0",
     "react-loading-skeleton": "^3.5.0",
+    "react-parallax-tilt": "^1.7.304",
     "react-phone-number-input": "^3.4.12",
     "react-scroll-motion": "^0.3.5",
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
+    "simple-parallax-js": "^6.2.1",
     "sitemap": "^8.0.0",
     "swiper": "^11.2.10",
     "yet-another-react-lightbox": "^3.25.0"
