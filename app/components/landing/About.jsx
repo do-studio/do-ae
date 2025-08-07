@@ -54,9 +54,7 @@ const About = () => {
               business goals and effective strategies yield success.
             </p>
           </div>
-          <div className="flex justify-end">
-            <p className="text-xl xl:text-2xl">About Us //</p>
-          </div>
+         
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 pt-5 xl:pt-16">
           {chartData?.map((dt, i) => (

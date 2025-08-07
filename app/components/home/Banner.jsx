@@ -11,8 +11,8 @@ const Banner = () => {
         <span className="relative">
           Marketing
           {/* Green Aa Badge */}
-          <span className="absolute -top-10 xl:-top-8 left-10 md:left-1/2 bg-yellow-400 text-black rounded-full h-10 w-10 md:h-14 md:w-14 grid place-items-center font-semibold text-[10px] md:text-sm -rotate-12 select-none">
-            SEO
+          <span className="absolute -top-16 xl:-top-16 left-14 md:left-1/2 text-center bg-yellow-400 text-black rounded-full h-16 w-16 xl:w-20 xl:h-20 grid place-items-center font-semibold text-[10px] md:text-sm -rotate-12 select-none">
+            Branding
           </span>
           {/* Full-Stack Badge with Icon */}
           
@@ -27,13 +27,13 @@ const Banner = () => {
         {/* Agencies Badge */}
         <span className="absolute flex items-center -top-5 md:top-0 right-0 md:right-16 bg-orange-400 rounded-full px-3 py-1.5 text-[8px] md:text-xs text-white font-semibold select-none">
           <BsArrowUpRight className="mr-1 text-white text-xs rotate-180" />
-          Branding
+          Web Development 
         </span>
       </h1>
 
       {/* Top-right Navigation Labels */}
       <div className="w-full text-white pt-16 md:pt-5 2xl:pt-10 xl:pr-20 flex text-nowrap justify-center xl:justify-end space-x-2 uppercase font-medium text-[10px] md:text-xs">
-        <span>Web Development</span>
+        <span>SEO</span>
         <span>-</span>
         <span>Production</span>
         <span>-</span>
