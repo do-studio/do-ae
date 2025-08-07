@@ -16,7 +16,6 @@ import Image from "next/image";
 
 const menus = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   {
     label: "Our Works",

@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Banner, About, Clients, Service, Ourworks, Testimonials, Contact } from "../components/landing";
+import {
+  Banner,
+  About,
+  Clients,
+  Service,
+  Ourworks,
+
+} from "../components/landing";
+import { GetinTouch,Testimonials} from "../components";
 
 const page = () => {
   return (
@@ -11,15 +19,17 @@ const page = () => {
         {/*  */}
         <About />
         {/*  */}
-        <Clients/>
+        <Clients />
         {/*  */}
-        <Service/>
+        <Service />
         {/*  */}
-        <Ourworks/>
+        <Ourworks />
         {/*  */}
-        <Testimonials/>
+        <Testimonials />
         {/*  */}
-        <Contact/>
+        <div className="bg-black rounded-[2rem] overflow-hidden">
+          <GetinTouch />
+        </div>
       </div>
     </div>
   );

@@ -48,8 +48,8 @@ const Ourworks = () => {
     <>
       <section className="bg-black rounded-3xl overflow-visible relative p-5 xl:p-16 text-white">
         {/* Header */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-16 border-b border-gray-600">
-          <div className="md:col-span-2 flex flex-col gap-5">
+        <div className="grid grid-cols-1  gap-y-5 pb-5 xl:pb-16 border-b border-gray-600">
+          <div className=" flex flex-col gap-5">
             <p className="text-2xl uppercase xl:text-6xl">
               Our Digital Footprints of Success continue to grow
             </p>
@@ -59,9 +59,7 @@ const Ourworks = () => {
               bottom line and fostering growth for modern businesses.
             </p>
           </div>
-          <div className="flex justify-end">
-            <p className="text-xl xl:text-2xl">Our Work //</p>
-          </div>
+         
         </div>
 
         {/* Swiper container */}

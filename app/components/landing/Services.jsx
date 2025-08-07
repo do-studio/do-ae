@@ -38,21 +38,19 @@ const Services = () => {
     <>
       <section className="bg-gray-100 text-black p-5 xl:p-10 xl:py-16 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-16 border-b border-gray-300">
-          <div className="flex justify-start">
-            <p className="ext-xl xl:text-2xl">// Our Services</p>
-          </div>
+         
           <div className="md:col-span-2 flex flex-col gap-5">
             <p className="text-2xl xl:text-6xl uppercase">
               Our Featured Services to Accelerate Your Business Digital Growth
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-6 xl:pt-16">
           {ServiceData?.map((dt, i) => {
             const Icon = dt.icon;
             return (
               <div
-                className="grid grid-cols-1 md:grid-cols-5 gap-5 border border-gray-400 p-5"
+                className="grid grid-cols-1 md:grid-cols-5 gap-5 rounded-3xl border border-gray-400 p-5"
                 key={dt.id} // Use unique id!
               >
                 <div className="md:col-span-2 relative rounded-2xl overflow-hidden aspect-video w-full md:aspect-square">
