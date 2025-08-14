@@ -10,7 +10,7 @@ import { ContactForm } from "../../components";
 const GetinTouch = () => {
   return (
     <>
-    <div className="w-full bg-[#0E0F16] h-full">
+    <div className="w-full bg-[#0E0F16] relative overflow-hidden h-full">
       <ContactForm/>
     </div>
      {/*  */}

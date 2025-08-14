@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-11/12 xl:w-10/12 mx-auto pt-10 xl:pt-20 xl:pb-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="w-11/12 xl:w-10/12 mx-auto pt-10 xl:pt-20 xl:pb-10 grid grid-cols-1 md:grid-cols-2 gap-5 overflow-hidden">
         <div className="h-full  flex flex-col gap-5 justify-center">
           <h1 className="text-4xl xl:text-7xl font-medium">READY TO WORK WITH US?</h1>
           <form
