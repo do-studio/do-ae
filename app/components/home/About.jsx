@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import AnimatedButton from "../ui/animatedButton";
 import { FaArrowRightLong } from "react-icons/fa6";

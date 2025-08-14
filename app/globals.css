@@ -60,10 +60,8 @@ a {
 /* Buttons */
 button {
   font-family: inherit;
-  font-size: 1em;
   cursor: pointer;
   border: none;
-  background: none;
   outline: none;
 }
 

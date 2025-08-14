@@ -1,34 +1,76 @@
-'use client'
 import { BsArrowUpRight } from "react-icons/bs";
-import { TfiMouse } from "react-icons/tfi";
+import { RevealWrapper } from "next-reveal";
 
 const Banner = () => {
   return (
     <div className="px-20 relative bg-black min-h-screen flex flex-col items-center justify-center py-20 ">
       {/* Main Title and Floating Badges */}
-      
+
       <h1 className="text-6xl md:text-[9vw] font-medium primary relative leading-none flex flex-col md:flex-row items-center">
         <span className="relative">
+           <RevealWrapper
+            origin="bottom"
+            delay={250}
+            duration={500}
+            distance="100px"
+            reset={true}
+          >
           Marketing
+          </RevealWrapper>
           {/* Green Aa Badge */}
-          <span className="absolute -top-16 xl:-top-16 left-14 md:left-1/2 text-center bg-yellow-400 text-black rounded-full h-16 w-16 xl:w-20 xl:h-20 grid place-items-center font-semibold text-[10px] md:text-sm -rotate-12 select-none">
-            Branding
-          </span>
+          <RevealWrapper
+            rotate={{ x: 12, y: 40, z: 0 }}
+            origin="up"
+            delay={100}
+            duration={500}
+            distance="100px"
+            reset={true}
+            className="absolute -top-16 xl:-top-16 left-14 md:left-1/2 text-center bg-yellow-400 text-black rounded-full h-16 w-16 xl:w-20 xl:h-20 grid place-items-center font-semibold text-[10px] md:text-sm -rotate-12 select-none"
+          >
+            <span>Branding</span>
+          </RevealWrapper>
           {/* Full-Stack Badge with Icon */}
-          
-          <span className="absolute -bottom-24 md:-bottom-7 xl:-bottom-5 left-0 md:left-10 bg-blue-600 px-3 py-1.5 rounded-full text-white text-[8px] md:text-xs font-semibold flex items-center">
-            Digital Marketing
-            <BsArrowUpRight className="ml-1 text-white text-xs" />
-          </span>
-    
+          <RevealWrapper
+            rotate={{ x: 12, y: 40, z: 0 }}
+            origin="bottom"
+            delay={150}
+            duration={500}
+            distance="100px"
+            reset={true}
+          >
+            <span className="absolute -bottom-24 md:-bottom-7 xl:-bottom-5 left-0 md:left-10 bg-blue-600 px-3 py-1.5 rounded-full text-white text-[8px] md:text-xs font-semibold flex items-center">
+              Digital Marketing
+              <BsArrowUpRight className="ml-1 text-white text-xs" />
+            </span>
+          </RevealWrapper>
         </span>
+           <RevealWrapper
+            origin="up"
+            delay={350}
+            duration={500}
+            distance="100px"
+            reset={true}
+          >
         <span className="text-white pl-2">Agency</span>
-        <span className="hidden md:block primary mt-5 -ml-3 text-8xl font-bold">.</span>
-        {/* Agencies Badge */}
-        <span className="absolute flex items-center -top-5 md:top-0 right-0 md:right-16 bg-orange-400 rounded-full px-3 py-1.5 text-[8px] md:text-xs text-white font-semibold select-none">
-          <BsArrowUpRight className="mr-1 text-white text-xs rotate-180" />
-          Web Development 
+        </RevealWrapper>
+        <span className="hidden md:block primary mt-5 -ml-3 text-8xl font-bold">
+          .
         </span>
+        {/* Agencies Badge */}
+        <RevealWrapper
+    
+          origin="right"
+          delay={200}
+          duration={500}
+          distance="100px"
+          reset={true}
+          className="absolute  -top-5 md:top-0 right-0 md:right-16 bg-orange-400 rounded-full px-3 py-1.5 text-[8px] md:text-xs text-white font-semibold select-none"
+        >
+          <span className="flex items-center">
+            <BsArrowUpRight className="mr-1 text-white text-xs rotate-180" />
+            Web Development
+          </span>
+        </RevealWrapper>
       </h1>
 
       {/* Top-right Navigation Labels */}
