@@ -4,11 +4,21 @@ import React from "react";
 import { Grade } from "../../../public";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Marquee from "react-fast-marquee";
-import Tilt from "react-parallax-tilt";
+import { ContactForm } from "../../components";
+
 
 const GetinTouch = () => {
   return (
     <>
+    <div className="w-full bg-[#0E0F16] h-full">
+      <ContactForm/>
+    </div>
+     {/*  */}
+    <div className="bg-[#0E0F16] relative overflow-hidden">
+        <Marquee gradient gradientColor="#0C0D14" className="py-10 overflow-hidden">
+            <a href="mailto:info@dostudio.co.in" target="_blank" className="text-4xl xl:text-9xl font-medium text-gray-600">info@dostudio.co.in</a>
+        </Marquee>
+    </div>
     <div
       className="w-full min-h-[280px] xl:min-h-[350px] flex items-center justify-center bg-gradient-to-r from-black via-green-900 to-black md:rounded-3xl relative overflow-hidden p-6"
       style={{
@@ -46,12 +56,7 @@ your goals and budget. Let’s create a digital roadmap that drives real results
 
       </div>
     </div>
-    {/*  */}
-    <div className="bg-[#140c0d] relative overflow-hidden">
-        <Marquee gradient gradientColor="#0C0D14" className="py-10 overflow-hidden">
-            <a href="#" className="text-4xl xl:text-9xl font-medium text-gray-600 hover:text-gray-400">info@dostudio.co.in</a>
-        </Marquee>
-    </div>
+   
     </>
   );
 };
