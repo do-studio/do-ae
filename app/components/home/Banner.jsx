@@ -1,11 +1,12 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import { RevealWrapper } from "next-reveal";
-
+import { Grade } from "../../../public";
+import Image from "next/image";
 const Banner = () => {
   return (
-    <div className="px-20 relative bg-black min-h-screen flex flex-col items-center justify-center py-20 ">
+    <div className="px-20 relative bg-[#0D0E16] w-[100vw] min-h-screen overflow-hidden flex flex-col items-center justify-center py-20 ">
       {/* Main Title and Floating Badges */}
-
+      <Image className="absolute w-full scale-200 xl:scale-none top-0 xl:-top-20 left-0 z-0 object-cover opacity-70" src={Grade} alt="garde" />
       <h1 className="text-6xl md:text-[9vw] font-medium primary relative leading-none flex flex-col md:flex-row items-center">
         <span className="relative">
            <RevealWrapper
@@ -45,7 +46,7 @@ const Banner = () => {
           </RevealWrapper>
         </span>
            <RevealWrapper
-            origin="up"
+            origin="bottom"
             delay={350}
             duration={500}
             distance="100px"
@@ -59,7 +60,7 @@ const Banner = () => {
         {/* Agencies Badge */}
         <RevealWrapper
     
-          origin="right"
+          origin="left"
           delay={200}
           duration={500}
           distance="100px"

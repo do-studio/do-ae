@@ -21,8 +21,9 @@ mapBrightness: 6,
   markerColor: [0.68, 1.0, 0.0],
   glowColor: [0.5, 0.5, 0.5],
   markers: [
-    { location: [10.8505, 76.2711], size: 0.07 },
-    { location: [25.276987, 55.296249], size: 0.07 },
+    { location: [10.8505, 76.2711], size: 0.04 },
+    { location: [12.971599, 77.594566], size: 0.05 },
+    { location: [25.276987, 55.296249], size: 0.06 },
   ],
 };
 
