@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FiChevronDown } from "react-icons/fi";
 import dynamic from 'next/dynamic';
@@ -12,6 +12,7 @@ import { IoIosClose } from "react-icons/io";
 import { AiOutlinePlus } from "react-icons/ai";
 import {DoLogo} from '../../../public'
 import Image from "next/image";
+import { VscClose } from "react-icons/vsc";
 
 
 const menus = [
@@ -59,7 +60,7 @@ const submenuVariants = {
 
 // Variants for spring animation on each menu item with delay
 const menuItemVariants = {
-  hidden: { opacity: 0, y: 10 }, // reduced initial x offset for quicker travel
+  hidden: { opacity: 0, y: -10 }, // reduced initial x offset for quicker travel
   visible: (i) => ({
     opacity: 1,
     y: 0,
@@ -85,6 +86,18 @@ const Header = () => {
   const closeSubmenu = () => {
     setSubmenuOpenIdx(null);
   };
+
+useEffect(() => {
+    if (modalOpen || submenuOpenIdx !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [modalOpen, submenuOpenIdx]);
 
   return (
     <div className="w-full flex justify-center px-2 py-4 fixed top-0 z-50 gap-3 bg-transparent">
@@ -222,7 +235,7 @@ const Header = () => {
                     className="self-end text-white font-bold leading-none focus:outline-none"
                     aria-label="Close menu"
                   >
-                    <IoIosClose className="text-2xl" />
+                    <VscClose className="text-3xl" />
                   </button>
 
                   {/* Modal Nav Items */}
@@ -232,7 +245,7 @@ const Header = () => {
                       return (
                         <motion.div
                           key={idx}
-                          className="capitalize font-semibold text-3xl flex flex-col gap-1"
+                          className="capitalize font-semibold text-2xl flex flex-col gap-1"
                           variants={menuItemVariants}
                           initial="hidden"
                           animate="visible"
@@ -295,7 +308,7 @@ const Header = () => {
                         <Link
                           href={sub.href}
                           onClick={() => setModalOpen(false)}
-                          className="text-white capitalize font-semibold text-3xl transition"
+                          className="text-white capitalize font-semibold text-2xl transition"
                         >
                           {sub.label}
                         </Link>
