@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "./components";
 import SmoothScrollProvider from "./components/smoothProvider";
-
+import InitialLoader from "./components/ui/InitialLoader";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -63,10 +63,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} antialiased min-h-screen flex flex-col justify-between`}
         cz-shortcut-listen="true"
-      >
+        >
+        <InitialLoader>
         <Header />
         {children}
         <Footer />
+      </InitialLoader>
       </body>
       {/* </SmoothScrollProvider> */}
     </html>

@@ -6,8 +6,8 @@ export default function Home() {
     <>
 
     <Banner/>
-    {/* <Clients/> */}
-    {/* <About/> */}
+    <Clients/>
+    <About/>
     <Ourworks/>
     <Services/>
     <Faq/>

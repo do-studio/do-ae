@@ -2,6 +2,7 @@ import Image from "next/image";
 import { DemoLogo } from "../../../public";
 import React from "react";
 import Marquee from "react-fast-marquee";
+import {ScrollText} from '../../components'
 
 const ClientsMarquee = [
   { logoimage: DemoLogo },
@@ -30,6 +31,7 @@ const Clients = () => {
           />
         ))}
       </Marquee>
+ {/* <ScrollText/> */}
     </div>
   );
 };

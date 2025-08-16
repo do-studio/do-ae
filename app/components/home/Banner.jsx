@@ -2,21 +2,37 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { RevealWrapper } from "next-reveal";
 import { Grade } from "../../../public";
 import Image from "next/image";
+import { BannerAnimation } from "../../components";
 const Banner = () => {
   return (
-    <div className="px-20 relative bg-[#0D0E16] w-[100vw] min-h-screen overflow-hidden flex flex-col items-center justify-center py-20 ">
+    <div className="px-20 relative bg-black w-[100vw] min-h-screen overflow-hidden flex flex-col items-center justify-center py-20 ">
+      <BannerAnimation
+        dotSize={10}
+        gap={15}
+        baseColor="#0F110E"
+        activeColor="#AEFE00"
+        proximity={220}
+        shockRadius={250}
+        shockStrength={5}
+        resistance={750}
+        returnDuration={1.5}
+      />
       {/* Main Title and Floating Badges */}
-      <Image className="absolute w-full scale-200 xl:scale-none top-0 xl:-top-20 left-0 z-0 object-cover opacity-70" src={Grade} alt="garde" />
+      <Image
+        className="absolute w-full  top-0 xl:-top-20 left-0 z-0 object-cover opacity-70 md:opacity-0"
+        src={Grade}
+        alt="garde"
+      />
       <h1 className="text-6xl md:text-[9vw] font-medium primary relative leading-none flex flex-col md:flex-row items-center">
         <span className="relative">
-           <RevealWrapper
+          <RevealWrapper
             origin="bottom"
             delay={250}
             duration={500}
             distance="100px"
             reset={true}
           >
-          Marketing
+            Marketing
           </RevealWrapper>
           {/* Green Aa Badge */}
           <RevealWrapper
@@ -45,21 +61,20 @@ const Banner = () => {
             </span>
           </RevealWrapper>
         </span>
-           <RevealWrapper
-            origin="bottom"
-            delay={350}
-            duration={500}
-            distance="100px"
-            reset={true}
-          >
-        <span className="text-white pl-2">Agency</span>
+        <RevealWrapper
+          origin="bottom"
+          delay={350}
+          duration={500}
+          distance="100px"
+          reset={true}
+        >
+          <span className="text-white pl-2">Agency</span>
         </RevealWrapper>
         <span className="hidden md:block primary mt-5 -ml-3 text-8xl font-bold">
           .
         </span>
         {/* Agencies Badge */}
         <RevealWrapper
-    
           origin="left"
           delay={200}
           duration={500}
