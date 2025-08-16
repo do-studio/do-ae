@@ -6,7 +6,7 @@ const Ourworks = () => {
     <div className="min-h-screen flex items-center py-10 xl:py-20 justify-center">
       <div className="w-11/12 mx-auto grid gap-2 xl:gap-5 grid-cols-1 md:grid-cols-2">
         {/* Left large card */}
-        <div className="bg-gray-200 rounded-3xl border border-gray-600 overflow-hidden p-8  flex flex-col relative aspect-square justify-center">
+        <div className=" bg-gray-200 rounded-3xl border border-gray-600 overflow-hidden p-8  flex flex-col relative aspect-square justify-center">
           <div className="absolute bg-white/20 backdrop-blur-sm px-3 py-2 rounded-full left-3 z-10 top-3 md:left-5 md:top-5 flex items-center gap-3">
             <span className="block h-3 w-3 rounded-full primary-bg"></span>
             <span className="text-white font-medium text-sm tracking-widest">

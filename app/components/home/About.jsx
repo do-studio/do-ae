@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedButton from "../ui/animatedButton";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ScrollRevealText from "../ui/scrollingText";
 
 
 const About = () => (
@@ -27,7 +28,7 @@ const About = () => (
     <div className="md:col-span-2">
       <div className="flex flex-col gap-5">
         {/* description */}
-        <p className="text-white text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
+        {/* <p className="text-white text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
           Do Studio is more than just a digital marketing agency in Dubai. We're
           a team of strategists, creatives, analysts, and developers passionate
           about turning ideas into results.
@@ -36,7 +37,8 @@ const About = () => (
             Our mission is to empower businesses through intelligent digital
             strategies that lead to measurable growth.
           </span>
-        </p>
+        </p> */}
+         <ScrollRevealText/>
         {/* description */}
 
         {/* Button */}
