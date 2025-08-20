@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+const gradevid = `https://cdn.sanity.io/files/0hjyj1bs/production/c7d3a61f746905c639c64bf6fda1700c247e18ee.mov`;
 
 // Import Swiper styles
 import "swiper/css";
@@ -46,9 +47,16 @@ const Ourworks = () => {
 
   return (
     <>
-      <section className="bg-black rounded-3xl overflow-visible relative p-5 xl:p-16 text-white">
+      <section className="bg-black rounded-3xl overflow-hidden relative h-full p-5 xl:p-16 text-white">
+ <video
+    src={gradevid}
+    autoPlay
+    loop
+    muted
+    className="absolute inset-0 w-full !h-[100%] object-cover opacity-80 z-0"
+  />
         {/* Header */}
-        <div className="grid grid-cols-1  gap-y-5 pb-5 xl:pb-16 border-b border-gray-600">
+        <div className="grid grid-cols-1  gap-y-5 pb-5 xl:pb-14 relative">
           <div className=" flex flex-col gap-5">
             <p className="text-2xl uppercase xl:text-6xl">
               Our Digital Footprints of Success continue to grow
@@ -61,6 +69,7 @@ const Ourworks = () => {
           </div>
          
         </div>
+                  <div className="relative bg-gradient-to-r from-transparent via-neutral-500 to-transparent h-[1px] w-full mx-auto" />
 
         {/* Swiper container */}
         <Swiper
@@ -163,7 +172,7 @@ const Ourworks = () => {
         </Swiper>
 
         {/* Pagination container moved BELOW swiper */}
-        <div className="swiper-pagination !mt-10 !-mb-10 flex justify-center"></div>
+        <div className="swiper-pagination !mt-10 !-mb-10  flex justify-center"></div>
       </section>
 
       {/* Custom CSS to override default pagination position */}

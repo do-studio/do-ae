@@ -13,7 +13,9 @@ import ContactForm from "./home/ContactFrom";
 import Globe from "./home/Globe";
 import Reveal from "./ui/reveal";
 import ScrollText from "./ui/scrollingText";
-import BannerAnimation from './ui/BannerAnimation'
+import BannerAnimation from './ui/BannerAnimation';
+
+import ServiceList from './services/servicelist'
 
 export {
   Header,
@@ -31,5 +33,6 @@ export {
   Globe,
   Reveal,
   ScrollText,
-  BannerAnimation
+  BannerAnimation,
+  ServiceList
 };

@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <>
       <section className="bg-gray-100 text-black p-5 xl:p-10 xl:py-16 rounded-2xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-16 border-b border-gray-300">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-14 ">
          
           <div className="md:col-span-2 flex flex-col gap-5">
             <p className="text-2xl xl:text-6xl uppercase">
@@ -45,6 +45,8 @@ const Services = () => {
             </p>
           </div>
         </div>
+                          <div className=" bg-gradient-to-r from-transparent via-neutral-500 to-transparent h-[1px] w-full mx-auto" />
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-6 xl:pt-16">
           {ServiceData?.map((dt, i) => {
             const Icon = dt.icon;

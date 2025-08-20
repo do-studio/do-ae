@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import {
   Banner,
@@ -8,7 +6,7 @@ import {
   Service,
   Ourworks,
 
-} from "../components/landing";
+} from "../components/services";
 import { GetinTouch,Testimonials} from "../components";
 
 const page = () => {
@@ -26,11 +24,11 @@ const page = () => {
         <Ourworks />
         {/*  */}
         <Testimonials />
+      </div>
         {/*  */}
         <div className="bg-black rounded-[2rem] overflow-hidden">
           <GetinTouch />
         </div>
-      </div>
     </div>
   );
 };

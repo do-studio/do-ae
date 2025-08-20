@@ -67,7 +67,7 @@ Dubai businesses.`,
 const INITIAL_FAQS = 5;
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(3);
+  const [openIndex, setOpenIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
 
   const displayFaqs = showAll ? faqs : faqs.slice(0, INITIAL_FAQS);
@@ -80,7 +80,9 @@ const Faq = () => {
     <div className="w-11/12 mx-auto py-10 xl:pt-20">
       <div className="flex items-center gap-3 mb-8">
         <span className="block h-3 w-3 rounded-full primary-bg" />
-        <span className="text-white font-medium text-sm tracking-widest">FAQ</span>
+        <span className="text-white font-medium text-sm tracking-widest">
+          FAQ
+        </span>
       </div>
 
       {/* Animate the FAQ list container */}
@@ -89,12 +91,13 @@ const Faq = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="flex flex-col gap-5 xl:gap-10 mt-10"
+        className="flex flex-col gap-5  xl:gap-8"
       >
         <AnimatePresence>
           {displayFaqs.map((faq, idx) => {
             const realIdx = showAll ? idx : idx;
             const isOpen = openIndex === (showAll ? realIdx : idx);
+             const isLast = idx === displayFaqs.length - 1; // Add this line
             return (
               <motion.div
                 layout
@@ -106,7 +109,9 @@ const Faq = () => {
                 className="flex items-start w-full"
               >
                 <div className="flex-1">
-                  <div className="text-sm md:text-[1.75rem] font-normal text-white">{faq.question}</div>
+                  <div className="text-sm md:text-[1.75rem] font-normal text-white">
+                    {faq.question}
+                  </div>
                   <motion.div
                     initial={{ opacity: 0, maxHeight: 0 }}
                     animate={{
@@ -114,19 +119,25 @@ const Faq = () => {
                       maxHeight: isOpen ? 500 : 0, // Adjust 500 if needed depending on content size
                     }}
                     transition={{ duration: 0.1, ease: "easeInOut" }}
-                    className="mt-4 text-[10px] md:text-[1rem] text-white opacity-80 leading-relaxed overflow-hidden"
+                    className={`${isOpen && 'pt-5'} text-[10px]  md:text-[1rem] text-white opacity-80 leading-relaxed overflow-hidden`}
                     aria-hidden={!isOpen}
                   >
                     {faq.answer || "Answer not available yet."}
                   </motion.div>
+                  {/* gradient border */}
+  {!isLast && (
+          <div className="mt-7 bg-gradient-to-r from-transparent via-neutral-600 to-transparent h-[1px] w-[90%] mx-auto" />
+        )}                  {/* gradient border */}
                 </div>
                 <button
                   onClick={() => handleToggle(showAll ? idx : idx)}
                   className="ml-3 xl:ml-8"
                   aria-label={isOpen ? "Hide answer" : "Show answer"}
                 >
-                  <span className="w-10 h-10 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-[#262626] transition-colors duration-150">
-                    <span className="text-white text-xl md:text-4xl pointer-events-none select-none">{isOpen ? "−" : "+"}</span>
+                  <span className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-[#262626] transition-colors duration-150">
+                    <span className="text-white text-xl md:text-4xl pointer-events-none select-none">
+                      {isOpen ? "−" : "+"}
+                    </span>
                   </span>
                 </button>
               </motion.div>
@@ -137,7 +148,10 @@ const Faq = () => {
 
       {faqs.length > INITIAL_FAQS && (
         <div className="flex justify-start mt-5">
-          <button className="capitalize text-white font-semibold" onClick={() => setShowAll(!showAll)}>
+          <button
+            className="capitalize text-white font-semibold"
+            onClick={() => setShowAll(!showAll)}
+          >
             {!showAll ? "Show more" : ""}
           </button>
         </div>
