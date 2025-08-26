@@ -39,7 +39,7 @@ const chartData = [
   },
 ];
 
-const About = () => {
+const About = ({service}) => {
   return (
     <>
       <section className="bg-black rounded-3xl overflow-hidden relative p-5 xl:p-16 text-white ">
@@ -49,7 +49,7 @@ const About = () => {
           autoPlay
           loop
           muted
-          className="absolute left-0 top-0 bottom-0 w-full h-full opacity-80 object-cover z-0"
+          className="absolute inset-0 w-full !h-[100%] object-cover opacity-80 z-0"
         />
         <div className="relative">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-16">

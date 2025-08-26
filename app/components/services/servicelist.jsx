@@ -80,7 +80,7 @@ const servicelist = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-full shadow-lg"
+                  className="w-full h-full object-cover shadow-lg aspect-square"
                 />
               </div>
               {/* Text for even idx (first, third, ...) */}

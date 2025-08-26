@@ -106,7 +106,8 @@ const Faq = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.3 }}
-                className="flex items-start w-full"
+                className="flex items-start w-full cursor-pointer"
+                 onClick={() => handleToggle(showAll ? idx : idx)}
               >
                 <div className="flex-1">
                   <div className="text-sm md:text-[1.75rem] font-normal text-white">
@@ -152,7 +153,7 @@ const Faq = () => {
             className="capitalize text-white font-semibold"
             onClick={() => setShowAll(!showAll)}
           >
-            {!showAll ? "Show more" : ""}
+            {!showAll ? "Show more" : " "}
           </button>
         </div>
       )}

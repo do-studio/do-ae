@@ -5,7 +5,8 @@ import {
   About,
   Clients,
   Service,
-  Ourworks
+  Ourworks,
+  Faq
 } from "../../../components/services";
 import { GetinTouch,Testimonials} from "../../../components";
 
@@ -42,13 +43,15 @@ export default function ServicePage({ params }) {
       <div className="w-11/12 mx-auto py-10 space-y-5">
         <Banner service={service} />
         {/*  */}
-        <About service={service} />
+        {/* <About service={service} /> */}
         {/*  */}
         <Clients service={service} />
         {/*  */}
         <Service service={service} />
         {/*  */}
         <Ourworks service={service} />
+        {/*  */}
+        <Faq service={service}/>
         {/*  */}
         <Testimonials />
       </div>

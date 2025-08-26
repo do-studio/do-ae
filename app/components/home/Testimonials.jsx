@@ -59,12 +59,12 @@ const Testimonials = () => {
           </span>
         </div>
         {/* Testimonials */}
-        <Marquee speed={50} pauseOnHover gradient gradientColor="#fff" gradientWidth={100}>
+        <Marquee speed={50} pauseOnHover gradient gradientColor="#fff" gradientWidth={50}>
           {TestimonialsData?.map((dt,i)=>(
             <div className="mt-5 mx-3 w-[300px] xl:w-[700px] relative" key={i}>
               {/* <span className="primary-bg w-5 h-5 rounded-full absolute -left-2 top-11"></span> */}
               <div className="bg-gray-50 duration-200 flex flex-col gap-4 py-10 px-5 rounded-3xl">
-                <p className="xl:text-xl">{dt.descrption}</p>
+                <p className="xl:text-lg">{dt.descrption}</p>
                 <p className="text-[10px] xl:text-sm ">{dt.name} / <a href={dt.link} className="hover:border-b text-[10px] xl:text-xs text-gray-500" target="_blank">{dt.design}</a></p>
               </div>
             </div>
