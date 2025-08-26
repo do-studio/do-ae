@@ -190,16 +190,18 @@ useEffect(() => {
             IconComponent={FaArrowRightLong}
           />
         </div>
-      </div>
 
-      {/* Mobile menu button */}
-      <div className="md:hidden grid text-white text-4xl place-items-center rounded-full">
+        {/* Mobile menu button */}
+      <div className="ml-3 md:hidden grid text-black text-2xl place-items-center rounded-full">
         <CgMenuLeft
           onClick={() => setModalOpen(true)}
           aria-label="Open menu"
           className="cursor-pointer"
         />
       </div>
+      </div>
+
+      
 
       {/* Modal overlay menu */}
       <AnimatePresence>

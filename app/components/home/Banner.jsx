@@ -1,3 +1,4 @@
+"use client";
 import { BsArrowUpRight } from "react-icons/bs";
 import { RevealWrapper } from "next-reveal";
 import { Grade } from "../../../public";

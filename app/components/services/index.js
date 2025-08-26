@@ -3,6 +3,7 @@ import About from './About.jsx';
 import Clients from './Clients.jsx';
 import Service from './Services.jsx';
 import Ourworks from './Ourworks.jsx';
+import Faq from './Faq.jsx'
 
 
-export{ Banner,About,Clients,Service,Ourworks}
+export{ Banner,About,Clients,Service,Ourworks,Faq}

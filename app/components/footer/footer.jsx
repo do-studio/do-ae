@@ -24,6 +24,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-white text-black w-full h-full relative overflow-hidden">
+                          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-[90%] mx-auto" />
+
       <p className="-z-0 uppercase font-extrabold text-zinc-100 text-[200px] xl:text-[270px] hidden md:block absolute left-[50%] -bottom-24  -translate-x-[50%] xl:-translate-x-[50%]">
         dostudio
       </p>
