@@ -25,7 +25,7 @@ const Clients = () => {
           <Image
             key={index}
             src={client.logoimage}
-            className="object-cover w-32 md:w-52"
+            className="object-cover w-32 md:w-52 pt-10"
             alt={`Client logo ${index + 1}`}
             
           />

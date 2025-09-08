@@ -38,7 +38,7 @@ function ScrollRevealText() {
         
         // Apply easing for smoother animation
         const easedProgress = easeInOutCubic(progress);
-        setRevealCount(Math.floor(easedProgress * CHAR_COUNT));
+        setRevealCount(Math.floor(easedProgress * CHAR_COUNT * 1.2));
       });
     };
 

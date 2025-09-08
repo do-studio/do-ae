@@ -11,7 +11,7 @@ const Page = () => {
   
   return (
     <section className="bg-white w-full min-h-screen">
-      <div className="h-40 xl:h-[350px] w-full relative overflow-hidden">
+      <div className="h-40 xl:h-[300px] w-full relative overflow-hidden">
         <Image
           className="object-cover object-bottom"
           fill

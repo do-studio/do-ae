@@ -13,6 +13,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import {DoLogo} from '../../../public'
 import Image from "next/image";
 import { VscClose } from "react-icons/vsc";
+import { usePathname } from "next/navigation";
 
 
 const menus = [
@@ -75,9 +76,29 @@ const menuItemVariants = {
 };
 
 const Header = () => {
+  const pathname = usePathname();
+  const isSerPath = pathname.includes("/services/");
   const [openMenu, setOpenMenu] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [submenuOpenIdx, setSubmenuOpenIdx] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if scrolled beyond 100vh
+        if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   const openSubmenu = (idx) => {
     setSubmenuOpenIdx(idx);
@@ -101,7 +122,7 @@ useEffect(() => {
 
   return (
     <div className="w-full flex justify-center px-2 py-4 fixed top-0 z-50 gap-3 bg-transparent">
-      <div className="w-full max-w-11/12 rounded-full bg-white shadow flex items-center px-3 md:px-6 py-2 md:py-2">
+    <div className={`w-full max-w-11/12 rounded-full ${isSerPath && '!text-black' } ${scrolled ? 'bg-white text-black' : 'bg-transparent text-white'} flex items-center px-3 md:px-6 py-2 md:py-2`}>
         {/* Left */}
         <div className="flex-1 md:text-lg font-medium text-black uppercase">
           <Link href="/">
@@ -122,7 +143,7 @@ useEffect(() => {
               >
                 <Link
                   href={menu.href}
-                  className="text-gray-600 uppercase hover:text-black transition cursor-pointer flex items-center"
+                  className="uppercase transition cursor-pointer flex items-center"
                 >
                   {menu.label}
                   {hasSubmenu && <FiChevronDown className="ml-1 w-4 h-4" />}
@@ -160,7 +181,7 @@ useEffect(() => {
                               text-nowrap
                               font-medium
                               rounded-lg
-                              hover:bg-[#AEFE00] hover:text-black
+                              hover:bg-[#AEFE00] 
                               transition
                               text-left
                               cursor-pointer"
@@ -182,17 +203,15 @@ useEffect(() => {
           <AnimatedButton
             href="/contact"
             label="CONTACT"
-            textColor="#000"
-            hoverTextColor="#000"
-            iconColor="#000"
-            hoverIconColor="#000"
             circleColor="#AEFE00"
             IconComponent={FaArrowRightLong}
+            scrolled={scrolled}
+            isSerPath={isSerPath}
           />
         </div>
 
         {/* Mobile menu button */}
-      <div className="ml-3 md:hidden grid text-black text-2xl place-items-center rounded-full">
+      <div className={`ml-3 md:hidden grid ${scrolled ? 'text-black' : 'text-white'}  text-2xl place-items-center rounded-full`}>
         <CgMenuLeft
           onClick={() => setModalOpen(true)}
           aria-label="Open menu"

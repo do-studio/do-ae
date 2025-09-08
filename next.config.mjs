@@ -23,6 +23,18 @@ const nextConfig = {
         port: "",     // Leaving blank means any port
         pathname: "/**", // Match all paths on the host
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",     // Leaving blank means any port
+        pathname: "/**", // Match all paths on the host
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com",
+        port: "",     // Leaving blank means any port
+        pathname: "/**", // Match all paths on the host
+      },
     ],
   },
 };

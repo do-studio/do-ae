@@ -4,7 +4,6 @@ import AnimatedButton from "../ui/animatedButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ScrollRevealText from "../ui/scrollingText";
 
-
 const About = () => (
   <div className="w-11/12 mx-auto bg-black min-h-[70vh] grid grid-cols-1 md:grid-cols-3 gap-5 py-16">
     <div className="flex flex-col justify-between">
@@ -18,12 +17,11 @@ const About = () => (
         <div className="text-white text-6xl md:text-7xl font-sans font-semibold">
           15+
         </div>
-      
-          <div className="text-gray-400 max-w-xs mt-2 text-base">
-            Professional Teams to empower ideas through high-impact design and
-            growth-focused strategy.
-          </div>
- 
+
+        <div className="text-gray-400 max-w-xs mt-2 text-base">
+          Professional Teams to empower ideas through high-impact design and
+          growth-focused strategy.
+        </div>
       </div>
     </div>
     <div className="md:col-span-2">
@@ -39,22 +37,13 @@ const About = () => (
             strategies that lead to measurable growth.
           </span>
         </p> */}
-         <ScrollRevealText/>
+        <ScrollRevealText />
         {/* description */}
 
         {/* Button */}
-        <div className="mt-3 relative">
-          <AnimatedButton
-            href="/about"
-            label="KNOW MORE"
-            textColor="#697282"
-            hoverTextColor="#697282"
-            iconColor="#697282"
-            hoverIconColor="#697282"
-            circleColor="#AEFE00"
-            IconComponent={FaArrowRightLong}
-          />
-        </div>
+        <button className="!text-sm primary-bg text-black w-fit px-10 py-4 rounded-full">
+          Learn more
+        </button>
       </div>
     </div>
   </div>

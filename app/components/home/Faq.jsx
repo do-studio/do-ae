@@ -150,7 +150,7 @@ const Faq = () => {
       {faqs.length > INITIAL_FAQS && (
         <div className="flex justify-start mt-5">
           <button
-            className="capitalize text-white font-semibold"
+            className="capitalize text-white "
             onClick={() => setShowAll(!showAll)}
           >
             {!showAll ? "Show more" : " "}
