@@ -7,11 +7,13 @@ const AnimatedButton = ({
   href,
   label,
   IconComponent,
-  textColor = "#000",
+
   hoverTextColor,
-  iconColor = "#000",
+
   hoverIconColor,
   circleColor = "#AEFE00",
+  scrolled,
+  isSerPath
 }) => {
   const linkRef = useRef(null);
   const colorRef = useRef(null);
@@ -118,7 +120,7 @@ const AnimatedButton = ({
             className="relative z-10 font-medium"
             ref={textRef}
             style={{
-              color: textColor,
+              color: `${scrolled ? 'black' : 'white'} ${isSerPath && 'black'}`,
               transition: "color 0.3s",
               textAlign: "center",
               flex: 1,
@@ -133,8 +135,8 @@ const AnimatedButton = ({
               className="relative ml-3 z-10"
               ref={iconRef}
               style={{
-                color: iconColor,
-                fill: iconColor,
+                color: `${scrolled ? 'black' : 'white'} ${isSerPath && 'black'}`,
+                fill: `${scrolled ? 'black' : 'white'} ${isSerPath && 'black'}`,
                 transition: "color 0.3s, fill 0.3s",
                 pointerEvents: "none",
               }}

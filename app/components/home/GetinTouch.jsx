@@ -15,9 +15,9 @@ const GetinTouch = () => {
     </div>
      {/*  */}
     <div className="bg-[#0E0F16] relative overflow-hidden">
-        <Marquee gradient gradientColor="#0C0D14" className="py-10 overflow-hidden">
-            <a href="mailto:info@dostudio.co.in" target="_blank" className="text-4xl xl:text-9xl font-medium text-gray-600">info@dostudio.co.in</a>
-        </Marquee>
+        <div className="text-center py-10 overflow-hidden">
+            <a href="mailto:info@dostudio.co.in" target="_blank" className="text-4xl xl:text-9xl font-medium text-gray-500">info@dostudio.co.in</a>
+        </div>
     </div>
     <div
       className="w-full min-h-[280px] xl:min-h-[350px] flex items-center justify-center bg-gradient-to-r from-black via-green-900 to-black md:rounded-3xl relative overflow-hidden p-6"

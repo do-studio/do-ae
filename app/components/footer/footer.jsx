@@ -4,6 +4,7 @@ import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { DoLogo } from "@/public";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const socialsLink = [
   {
@@ -24,11 +25,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-white text-black w-full h-full relative overflow-hidden">
-                          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-[90%] mx-auto" />
+      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-[90%] mx-auto" />
 
-      <p className="-z-0 uppercase font-extrabold text-zinc-100 text-[200px] xl:text-[270px] hidden md:block absolute left-[50%] -bottom-24  -translate-x-[50%] xl:-translate-x-[50%]">
-        dostudio
-      </p>
+      <Marquee speed={100} className="xl:-mb-96">
+        <p className="-z-0 uppercase font-bold text-[#b9b1b10f] text-[100px] xl:text-[270px] hidden xl:block ">
+          dostudio
+        </p>
+      </Marquee>
       <div className="w-11/12 mx-auto relative">
         <div className="py-10 flex flex-col md:flex-row justify-between gap-10">
           <div className="w-[100%] xl:w-[30%] flex flex-col gap-4">
@@ -39,7 +42,7 @@ const Footer = () => {
                 alt=""
               />
             </Link>
-            <p className="text-xs text-gray-500">
+            <p className="text-sm text-gray-500">
               Let’s collaborate on something bold, strategic, and unforgettable.
               Share your ideas — we’ll turn them into a digital masterpiece.
             </p>
@@ -53,7 +56,7 @@ const Footer = () => {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" text-gray-500 hover:text-black hover:scale-105 duration-150  text-2xl transition-colors"
+                    className=" text-gray-500 hover:text-black hover:scale-125 duration-200  text-2xl transition-all"
                   >
                     <Icon />
                   </Link>
