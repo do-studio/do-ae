@@ -26,7 +26,7 @@ export default function FAQ({service}) {
         >
           <button
             onClick={() => toggleFAQ(index)}
-            className="w-full text-left p-4 font-semibold text-lg flex justify-between  items-center"
+            className="w-full text-left p-4 font-medium text-lg flex justify-between  items-center"
             aria-expanded={openIndex === index}
           >
             {item.question}

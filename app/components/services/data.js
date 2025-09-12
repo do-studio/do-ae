@@ -2,9 +2,9 @@ import {servbranding,servseo,servweb,servsocial} from '../../../public'
 export const serviceData = [
   {
     title: "branding",
-    innertitle: `branding`,
-    slug: "branding",
-    desc: "Our branding services are designed to enable your business to rise to prominence with an extremely powerful, unforgettable identity speaking for itself to your target audience.",
+    innertitle: `Branding Agency in Dubai UAE | DoStudio UAE`,
+    slug: "branding-agency-in-dubai-uae",
+    desc: "DoStudio, a leading branding agency in Dubai, UAE, creates strategic brand identities that inspire, stand out, and drive growth across industries.",
     thumbsrc:servbranding,
     about:
       "At DoStudio, we’re more than just a design agency, we’re your strategic partner in building distinctive brands. As a premium branding agency in Dubai, UAE, our team of visionaries, designers, and storytellers is committed to creating honest, meaningful, and future-ready brands. We craft transformative brand experiences tailored for thinkers, innovative startups, and forward-looking enterprises, ensuring your business stands out in a crowded market.",
@@ -71,11 +71,9 @@ ensuring your brand looks polished and professional at all times.`,
   },
   {
     title: "website development",
-    innertitle: `Website Development Company in Dubai`,
-    slug: "website-development-company-in-dubai",
-    desc: `Your website is more than a digital footprint-it’s your brand’s first impression. We build fast,
-functional, and future-ready websites for businesses across Dubai, helping you stand out in
-a competitive market.`,
+    innertitle: `Website Development Company in Dubai | DoStudio UAE`,
+    slug: "web-development-company-in-dubai",
+    desc: `DoStudio, a professional website development company in Dubai, builds tailored, scalable, and high-performing websites that accelerate business growth.`,
     thumbsrc:servweb,
         about: `At DoStudio, we specialize in creating websites that fuel growth. Whether you need a
 branded landing page or a complex eCommerce platform, we deliver digital experiences
@@ -137,9 +135,9 @@ optimization, and digital marketing to boost your online visibility.`,
   },
   {
     title: "SEO",
-    innertitle: `Do Studio - SEO Agency in Dubai`,
-    slug: "dostudio-seo-agency-in-dubai",
-    desc: `We help brands rank higher, convert better, and grow faster through smart, results-driven SEO. As an SEO agency in Dubai, we combine local expertise with proven strategies to deliver measurable business growth.`,
+    innertitle: `Professional SEO Agency in Dubai | DoStudio`,
+    slug: "seo-agency-in-dubai",
+    desc: `DoStudio, an SEO agency in Dubai, helps businesses get noticed online with smart strategies that boost rankings, improve visibility, and bring real growth.`,
      thumbsrc:servseo,
          about: `DoStudio is an SEO-focused agency in Dubai helping startups, established brands, and local businesses achieve sustainable online growth.
 Our approach blends local market knowledge, transparent communication, and
@@ -220,10 +218,9 @@ ROI.`,
 
   {
     title: "social media",
-    innertitle:`Social Media Marketing Agency in Dubai`,
+    innertitle:`DoStudio | Social Media Marketing Agency in Dubai`,
     slug: "social-media-marketing-agency-in-dubai",
-    desc: `DO Studio is your results-driven social media marketing agency in Dubai, dedicated to
-making your brand impossible to ignore.`,
+    desc: `DoStudio, a social media marketing agency in Dubai, helps brands reach the right audience, spark engagement, and turn online presence into results`,
       thumbsrc:servsocial,
     about: `DO Studio is your results-driven social media marketing agency in Dubai, dedicated to
 making your brand impossible to ignore. Our expert team combines creative flair with deep
