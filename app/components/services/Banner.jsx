@@ -24,12 +24,12 @@ const Banner = ({service}) => {
           autoPlay
           loop
           muted
-          className="absolute left-0 top-0 bottom-0 w-full h-full opacity-80 object-cover z-0"
+          className="absolute left-0 top-0 bottom-0 !w-full !h-full opacity-80 object-cover z-0"
         />
           </div>
           <div className="flex flex-col gap-6 xl:w-[70%] relative z-10">
-            <div className="uppercase text-4xl xl:text-6xl font-medium">
-              <h4>{service.innertitle}</h4>
+            <div className="uppercase  text-3xl xl:text-5xl xl:leading-16 font-medium">
+              <h1>{service.innertitle}</h1>
             </div>
 
             <p className="text-xs xl:text-lg xl:text-justify">
