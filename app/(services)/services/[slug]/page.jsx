@@ -49,7 +49,7 @@ export default function ServicePage({ params }) {
         {/*  */}
         <Service service={service} />
         {/*  */}
-        <Ourworks service={service} />
+        {/* <Ourworks service={service} /> */}
         {/*  */}
         <Faq service={service}/>
         {/*  */}
